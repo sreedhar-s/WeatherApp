@@ -10,7 +10,7 @@ const App = () => {
 
   const fetchAPI = async () => {
     const response =
-      await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${process.env.WEATHER_API_KEY}&q=${search}
+      await fetch(`https://api.weatherapi.com/v1/forecast.json?key=c35e9221096841eb986140132232603&q=${search}
     `);
     const resJSON = await response.json();
     setCity(resJSON);
